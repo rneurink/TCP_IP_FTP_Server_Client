@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Config>
+  <Settings>
+    <KEY NAME="MIN_PASV_PORT" VALUE="15000" />
+    <KEY NAME="MAX_PASV_PORT" VALUE="15100" />
+    <KEY NAME="FTP_PORT" VALUE="21" />
+  </Settings>
+  <UserAccounts>
+    <USER UserName="Admin" Password="Admin" Rootpath="C:" Permission="111111111" Enabled="1" />
+  </UserAccounts>
+</Config>

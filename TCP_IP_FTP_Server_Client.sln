@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advanced TCP_IP_FTP_Server", "Advanced TCP_IP_FTP_Server\Advanced TCP_IP_FTP_Server.csproj", "{FA9A6CF4-918F-41B2-BC47-5028F12834F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advanced TCP_IP_FTP_Client", "Advanced TCP_IP_FTP_Client\Advanced TCP_IP_FTP_Client.csproj", "{79F36F70-1B35-45AC-9BF5-5FEC1D471E30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple TCP_IP_FTP_Server", "Simple TCP_IP_FTP_Server\Simple TCP_IP_FTP_Server.csproj", "{C0B0810C-1498-44FA-82AE-EA887984A5C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple TCP_IP_FTP_Client", "Simple TCP_IP_FTP_Client\Simple TCP_IP_FTP_Client.csproj", "{976910F2-B8BE-4DFE-8442-E554EE00D2D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA9A6CF4-918F-41B2-BC47-5028F12834F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA9A6CF4-918F-41B2-BC47-5028F12834F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA9A6CF4-918F-41B2-BC47-5028F12834F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA9A6CF4-918F-41B2-BC47-5028F12834F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79F36F70-1B35-45AC-9BF5-5FEC1D471E30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79F36F70-1B35-45AC-9BF5-5FEC1D471E30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79F36F70-1B35-45AC-9BF5-5FEC1D471E30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79F36F70-1B35-45AC-9BF5-5FEC1D471E30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0B0810C-1498-44FA-82AE-EA887984A5C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0B0810C-1498-44FA-82AE-EA887984A5C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0B0810C-1498-44FA-82AE-EA887984A5C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0B0810C-1498-44FA-82AE-EA887984A5C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{976910F2-B8BE-4DFE-8442-E554EE00D2D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{976910F2-B8BE-4DFE-8442-E554EE00D2D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{976910F2-B8BE-4DFE-8442-E554EE00D2D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{976910F2-B8BE-4DFE-8442-E554EE00D2D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
