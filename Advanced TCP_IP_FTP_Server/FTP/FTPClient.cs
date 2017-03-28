@@ -117,8 +117,6 @@ namespace Advanced_TCP_IP_FTP_Server
         /// <param name="ar"></param>
         private void ReceiveCallback(IAsyncResult ar)
         {
-            //TODO add socketexception and objectdisposedexception
-
             try
             {
                 //Returns how many bytes are received
@@ -142,7 +140,7 @@ namespace Advanced_TCP_IP_FTP_Server
                 bool CmdExecuted = false;
 
                 if (CmdArguments != null && CmdArguments.EndsWith("\r\n")) CmdArguments = CmdArguments.Substring(0, CmdArguments.Length - 2);
-
+                FTP.NewServerLog("Command received: " + Command + " "+ CmdArguments);
                 switch (Command)
                 {
                     //Authentication username
@@ -181,7 +179,7 @@ namespace Advanced_TCP_IP_FTP_Server
                                 break;
 
                             case "DELE": DELE(CmdArguments); break;
-                            //TODO case "FEAT": FEAT(CmdArguments); break;
+                            // case "FEAT": FEAT(CmdArguments); break;
                             case "LIST": LIST(CmdArguments); break;
                             case "MKD": MKD(CmdArguments); break;
                             case "NLST": NLST(CmdArguments); break;
@@ -259,15 +257,6 @@ namespace Advanced_TCP_IP_FTP_Server
                 else SendMessage("550 File dose not exist.\r\n");
             }
             catch (Exception Ex) { SendMessage("550 " + Ex.Message + ".\r\n"); }
-        }
-
-        /// <summary>
-        /// Lists all available commands
-        /// </summary>
-        /// <param name="CmdArguments"></param>
-        private void FEAT(string CmdArguments)
-        {
-            //TODO implement
         }
 
         /// <summary>
@@ -727,6 +716,7 @@ namespace Advanced_TCP_IP_FTP_Server
         /// <param name="data"></param>
         private void SendMessage(string data)
         {
+            FTP.NewServerLog("Response send: " + data);
             try { ClientSocket.Send(Encoding.ASCII.GetBytes(data)); }
             catch { Disconnect(); }
         }
